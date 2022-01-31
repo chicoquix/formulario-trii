@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <header class="titulo"><h1>Peça seu orçamento agora mesmo!</h1></header>
+        <div class="form_main">
+            <form class="form_article" id="form_article" name="formulario" method="POST"> 
+                <fieldset>
+                    <input type="text" name="nome" id="nome" class="inputAnimado" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" class="inputAnimado" placeholder="E-mail" required>
+                </fieldset>
+                <fieldset>
+                    <input type="tel" name="telefone" id="telefone" class="inputAnimado" placeholder="Telefone" required>
+                    <select id="servico" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="1">Marketing</option>
+                        <option value="2">WebSite</option>
+                        <option value="3">Mainframe</option>
+                      </select>
+                </fieldset>
+                <fieldset>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" class="inputAnimado" required></textarea>
+                </fieldset>
+                <fieldset class="fieldset_button">
+                    <button name="submit" type="submit" onclick="validaForm()">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+    </main>
+    <script src="./js/valida.js"></script>
+</body>
+</html>
